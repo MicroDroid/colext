@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Settings - Colext</title>
+	<script type="text/javascript" src="res/js/jquery.min.js"></script>
+	<script type="text/javascript" src="res/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="res/js/options.js"></script>
+	<script type="text/javascript" src="res/js/jsgrid.min.js"></script>
+	<script type="text/javascript" src="res/js/jscolor.min.js"></script>
+	<link rel="icon" href="res/img/icon_32.png">
+	<link rel="stylesheet" type="text/css" href="res/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="res/css/jsgrid.min.css" />
+	<link type="text/css" rel="stylesheet" href="res/css/jsgrid-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="res/css/awesome-bootstrap-checkbox.css"/>
+	<style type="text/css">
+		body {
+			padding: 4% 2% 2% 4%;
+			min-width: 720px;
+		}
+
+		#rules {
+			min-width: 480px;
+		}
+
+		input[type=color] {
+			margin-left: 16px;
+		}
+	</style>
+</head>
+<body>
+	<div class="checkbox">
+		<input type="checkbox" id="auto-enable">
+		<label for="auto-enable" data-toggle="tooltip" title="Only applies if the website doesn't have a specific rule specified below">
+			Always enabled by default
+		</label>
+	</div>
+	<br/>
+	<label>Per-site rules:</label>
+	<p>Only put hostnames, such as <code>google.com</code> or <code>www.youtube.com</code>, don't wrap it with <code>http://</code> or any slashes. The hostname must exactly match the specified rule's base URL. Subdomains are separate rules</p>
+	<div id="rules"></div>
+	<br/>
+	<label>Start color: </label><input class="jscolor form-control" id="start-color" name="start_color">
+	<br/>
+	<label>End color: </label><input class="jscolor form-control" id="end-color" name="end_color">
+	<br/>
+	<br/>
+	<p id="color-test">This is a test paragraph, click on the color buttons to change the gradiation of the colored text so it best fits you. Don't over saturate colors, keep the colors less saturated so it looks easy to read for the eye. With the proper coloring, the text can look much easier to read and reduces any eye strain caused by reading.</p>
+</body>
+</html>

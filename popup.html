@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Site preferences - Colext</title>
+	<script type="text/javascript" src="res/js/jquery.min.js"></script>
+	<script type="text/javascript" src="res/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="res/js/popup.js"></script>
+	<link rel="icon" href="res/img/icon_32.png">
+	<link rel="stylesheet" type="text/css" href="res/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="res/css/awesome-bootstrap-checkbox.css"/>
+	<style type="text/css">
+		body {
+			min-width: 280px;
+			background: #EEE;
+		}
+
+		#logo {
+			margin: 8px auto 16px auto;
+			display: block;
+			max-width: 50%;
+		}
+
+		ul.stack {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		ul.stack > li {
+			padding: 12px;
+			list-style: none;
+			text-align: center;
+			border-bottom: 1px dashed #AAA;
+		}
+
+		ul.stack > li:last-child {
+			border-bottom: none;
+		}
+
+		ul.stack > li:hover, ul.stack > li:focus {
+			background: #DDD;
+			cursor: pointer;
+		}
+
+		hr {
+			border-bottom: 2px dashed grey;
+		}
+	</style>
+</head>
+<body>
+	<img src="res/img/icon_256.png" id="logo">
+	<hr/>
+	<ul class="stack">
+		<li id="color-toggle">
+			<span class="glyphicon glyphicon-scissors"></span> Toggle coloring
+		</li>
+		<li id="rule">
+			<span class="glyphicon glyphicon-minus"></span> Rule not set
+		</li>
+		<li id="settings">
+			<span class="glyphicon glyphicon-cog"></span> Settings
+		</li>
+	</ul>
+</body>
+</html>

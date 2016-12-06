@@ -1,0 +1,50 @@
+{
+    "manifest_version": 2,
+
+    "name": "Colext",
+    "description": "Color webpages for easier reading and less eyestrain!",
+    "version": "0.2",
+
+    "icons": {
+        "32": "res/img/icon_32.png",
+        "48": "res/img/icon_48.png",
+        "96": "res/img/icon_96.png",
+        "128": "res/img/icon_128.png",
+        "256": "res/img/icon_256.png",
+        "512": "res/img/icon_512.png"
+    },
+    
+    "options_page": "options.html",
+
+    "options_ui": {
+        "page": "options.html"
+    },
+
+    "browser_action": {
+        "default_icon": "res/img/icon_48.png",
+        "default_title": "Colext",
+        "default_popup": "popup.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["/res/js/jquery.min.js", "res/js/injected.js"]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "storage",
+        "unlimitedStorage",
+        "tabs",
+        "http://*/",
+        "https://*/",
+        "file:///*"
+    ],
+    "applications": {
+        "gecko": {
+            "id": "yousef.su.2000@gmail.com",
+            "strict_min_version": "47"
+        }
+    }
+}
