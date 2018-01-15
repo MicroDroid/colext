@@ -3,7 +3,7 @@
 
     "name": "Colext",
     "description": "Color webpages for easier reading and less eyestrain!",
-    "version": "0.2",
+    "version": "0.1.0",
 
     "icons": {
         "32": "res/img/icon_32.png",
@@ -40,11 +40,5 @@
         "http://*/",
         "https://*/",
         "file:///*"
-    ],
-    "applications": {
-        "gecko": {
-            "id": "yousef.su.2000@gmail.com",
-            "strict_min_version": "47"
-        }
-    }
+    ]
 }
