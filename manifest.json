@@ -3,7 +3,7 @@
 
     "name": "Colext",
     "description": "Color webpages for easier reading and less eyestrain!",
-    "version": "0.1.0",
+    "version": "0.1.1",
 
     "icons": {
         "32": "res/img/icon_32.png",
@@ -29,7 +29,7 @@
     "content_scripts": [
         {
             "matches": ["http://*/*", "https://*/*"],
-            "js": ["/res/js/jquery.min.js", "res/js/injected.js"]
+            "js": ["/res/js/jquery-3.4.1.slim.min.js", "res/js/injected.js"]
         }
     ],
     "permissions": [
